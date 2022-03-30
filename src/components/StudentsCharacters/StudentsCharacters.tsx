@@ -1,41 +1,20 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import ShowData from "../ShowData/ShowData";
+import { ICharacter } from "../AllCharacters/AllCharacters";
 import {
   AllCharactersWrapper,
   CharacterInfoWrapper,
-} from "./AllCharacters.styles";
+} from "../AllCharacters/AllCharacters.styles";
+import ShowData from "../ShowData/ShowData";
 
-export interface ICharacter {
-  name: string;
-  species: string;
-  gender: string;
-  house: string;
-  dateOfBirth: string;
-  wizard: boolean;
-  ancestry: string;
-  eyeColour: string;
-  hairColour: string;
-  wand: {
-    wood: string;
-    core: string;
-    length: number;
-  };
-  patronus: string;
-  hogwartsStudent: boolean;
-  hogwartsStaff: boolean;
-  actor: string;
-  image: string;
-}
-
-const AllCharacters = () => {
+const StudentsCharacters = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [characters, setCharacters] = useState<ICharacter[]>([]);
   const [error, setError] = useState<Error>();
 
   useEffect(() => {
     axios
-      .get("http://hp-api.herokuapp.com/api/characters")
+      .get("http://hp-api.herokuapp.com/api/characters/students")
       .then((res) => {
         setCharacters(res.data);
         setIsLoading(false);
@@ -63,4 +42,4 @@ const AllCharacters = () => {
   );
 };
 
-export default AllCharacters;
+export default StudentsCharacters;
