@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AllCharacters from "../AllCharacters/AllCharacters";
-import HouseCharacters from "../GryffindorCharacters/GryffindorCharacters";
+import HouseCharacters from "../HouseCharacters/HouseCharacters";
 import StaffCharacters from "../StaffCharacters/StaffCharacters";
 import StudentsCharacters from "../StudentsCharacters/StudentsCharacters";
 import {

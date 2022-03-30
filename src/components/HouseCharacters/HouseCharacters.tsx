@@ -27,7 +27,7 @@ const HouseCharacters = ({ endpoint }: Props) => {
         setError(err);
         setIsLoading(false);
       });
-  }, []);
+  }, [endpoint]);
 
   return (
     <AllCharactersWrapper as="article">
