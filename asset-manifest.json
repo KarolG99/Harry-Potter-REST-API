@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Harry-Potter-REST-API/static/css/main.e6c13ad2.css",
+    "main.js": "/Harry-Potter-REST-API/static/js/main.3d55030a.js",
+    "index.html": "/Harry-Potter-REST-API/index.html",
+    "static/media/image-placeholder.svg": "/Harry-Potter-REST-API/static/media/image-placeholder.c8b3e9fb7476fe859f81c0f2cb181592.svg",
+    "main.e6c13ad2.css.map": "/Harry-Potter-REST-API/static/css/main.e6c13ad2.css.map",
+    "main.3d55030a.js.map": "/Harry-Potter-REST-API/static/js/main.3d55030a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3d55030a.js"
+  ]
+}
